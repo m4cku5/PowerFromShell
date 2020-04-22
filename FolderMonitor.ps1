@@ -1,3 +1,5 @@
+<# The script is set to run every half hour in Task Scheduler. If the FileLimit is exceeded, an email alert is sent. #>
+
 function Send-EmailAlert {
 
     [CmdletBinding()]
