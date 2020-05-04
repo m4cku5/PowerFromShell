@@ -91,6 +91,11 @@ function Send-EmailAlert {
 
     param(
     
+        # Specifies the current date and time.
+        [Parameter(Mandatory=$false)]
+        [string]
+        $DateAndTime = (Get-Date -Format "dddd MM/dd/yyyy HH:mm K")
+    
         # Specifies the source email address. This can be fake.
         [Parameter(Mandatory=$false)]
         [ValidateNotNullOrEmpty()]
