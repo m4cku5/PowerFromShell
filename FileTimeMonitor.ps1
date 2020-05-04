@@ -76,10 +76,10 @@ function Get-Files {
     }
 
     if ($Count -gt 0) {
-
-        Write-Host "There are $Count files missing. An email alert has been sent."
         
         Send-EmailAlert
+
+        Write-Host "There are $Count files missing. An email alert has been sent."
 
     }
 
