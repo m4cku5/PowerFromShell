@@ -60,7 +60,6 @@ function Get-Files {
     )
 
     $Count = $null
-    $MissingFiles = $null
 
     for ($Hour = 0; $Hour -lt 24; $Hour++) {
 
@@ -102,7 +101,6 @@ function Send-EmailAlert {
         [Parameter(Mandatory=$false)]
         [ValidateNotNullOrEmpty()]
         [System.Net.Mail.MailAddress]
-        #$To = 'it_edi_team@crosleybrands.com', 
         $To = '<username>@<domain>',
 
         # Specifies the email subject.
