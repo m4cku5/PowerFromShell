@@ -312,7 +312,7 @@ function Send-EmailAlert {
         [Parameter(Mandatory=$false)]
         [ValidateNotNullOrEmpty()]
         [System.Net.Mail.MailAddress]
-        #$to = '[user]@[domain].com',
+        $to = '[user]@[domain].com',
         
         # Specifies the email priority level. Choose Low, Medium, or High.
         [Parameter(Mandatory=$false)]
